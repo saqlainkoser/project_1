@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        div.parent{
+            display:grid;
+            grid-template-columns: 70% 30%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            /* border: solid black; */
+            font-size: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .one{
+            z-index: 10;
+            font-size:3vw;
+            margin:0%;
+            padding:3%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            background-size: 50%;
+            /* min-width   : 600px; */
+            color:rgb(159, 234, 255);
+            text-align: center;
+            text-transform:uppercase;
+            grid-column: 1/3;
+            position:fixed;
+            top:0%;
+            right:0%;
+            left:0%;
+
+            visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            display: block;
+            /* grid-row: 1/3; */
+        }
+        .two{
+            margin:0%;
+            padding:2%;
+            /* background-color:rgb(150, 60, 27); */
+            color:black;
+            text-align: center;
+            text-transform:uppercase;
+            grid-column: 1/2;
+            grid-row: 3/20;
+        }
+        .content a:hover {
+            background-color:rgb(148, 148, 181);
+        }
+        .three a.active {
+  background-color:rgb(181, 181, 182); 
+}
+        .three{
+            font-size: 3vw;
+            width: 20%;
+            margin:0%;
+            padding:2%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            color:black;
+            text-align: center;
+            text-transform: uppercase;
+            grid-column: 2/3;
+            grid-row: 2/10;
+            position:fixed;
+            right:0%;
+            top:0%;
+            bottom:0%;
+            visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            }
+
+            @media screen and (max-width: 700px) {
+                .three{
+            font-size: 30px;
+            width: 20%;
+            margin:0%;
+            padding:2%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            color:black;
+            text-align: center;
+            text-transform: uppercase;
+            grid-column: 2/3;
+            grid-row: 2/10;
+            position:fixed;
+            right:0%;
+            top:0%;
+            bottom:0%;
+            visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            }
+}
+
+/* Add animation (fade in the popup) */
+          @-webkit-keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity: 1;}
+         }
+
+        @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+        }
+        
+        body{
+          grid:none;    
+            /* background-color:rgb(28, 212, 236); */
+            background-image: url('https://media.istockphoto.com/id/1223914421/vector/abstract-blue-wave-background.jpg?s=612x612&w=0&k=20&c=W8IAWjODYdStfbZXxqdG-ovDG2rWjRehnlrQCw1eDn0=');
+            background-size: 50%;
+            min-width: 300px;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+#popup {
+  display: none;
+}
+
+.popup__wrapper {
+  background: rgba(0, 0, 0, .75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.popup__container {
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 100px auto;
+  max-width: 100%;
+  padding: 20px;
+  width: 500px;
+}
+
+.popup__title {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+        
+    </style>
+    <body>
+    <div class="parent">
+    <p class="one"  ><u><big><big>WORD COUNTER  </big></big></u></p>
+    <div class='three'>
+        <br><br><hr>
+        <div class='content'>
+        <a  href='extra project.html' class='active' style="color:black; position:relative; text-align: center; "><small><small><small><small>HOME</small></small></small></small></a><hr>
+    <a  href='blog.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>BLOG</small></small></small></small></a><hr>
+     <a href='about.html' style="color:black;position:relative; bottom:0px;"><small><small><small><small> ABOUT</small></small></small></small></a><hr>
+        <a  href='f1.htm' style="color:black; position:relative;  text-align: center; "><small><small><small><small>COUNT FREQUENCY</small></small></small></small></a><hr>
+    <!-- <a  href='find word.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>FIND WORD</small></small></small></small></a><hr> -->
+    <a  href='feedback.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>FEEDBACK</small></small></small></small></a><hr>
+    <a  href='help.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>HELP</small></small></small></small></a><hr>
+</div>
+</div>
+        <form action="">
+            <p class="two">
+                <br><br><br>
+            <textarea id="TEXT" placeholder="Enter the text..."cols="50" rows="10" style="background-color:rgb(73, 168, 247) ; border: 3px black solid ;border-radius: 10px;visibility: visible;
+            -webkit-animation: fadeIn 1s;
+             animation: fadeIn 1s ; width: 70%; min-width: 100px; height: 30%;"></textarea>
+            <div style="text-align: center; font-size:3vw;  min-width:50%;">WORDS &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp : <span id="wordsCount">0</span><br>
+            VOWELS &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp: <span id="vowelCount">0</span><br>
+            DIGITS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <span id="digitCount">0</span><br>
+            SENTENCES&nbsp &nbsp &nbsp &nbsp: <span id="sentenceCount">0</span><br>
+            PARAGRAPH &nbsp&nbsp&nbsp&nbsp : <span id="paragraphCount">0</span><br>
+            CHARACTERS &nbsp&nbsp&nbsp&nbsp: <span id="characterCount">0</span><br>
+            CONSONANTS &nbsp&nbsp : <span id="consonantCount">0</span><br>
+            READING TIME&nbsp : <span id="readingTime">0</span><br>
+            </div>
+            </p>
+            </form>
+            <div id="popup" class="popup__wrapper" style="text-align: center;">
+                <div class="popup__container">
+                  <h1 class="popup__title">Thank you for visiting!</h1>
+                  <p>Have a wonderful day 💁</p>
+                  <p>Kindly fill the feedback form!!</p>
+                  <a href="feedback.html">
+                    <button name= "feedback" size="20" maxlength="40"style="background-color:rgb(88, 175, 246); border: 3px black gradient;border-radius: 30px;"> <b><pre> FEEDBACK </pre></b></button>
+                    </a>
+                    <!-- <br><br> -->
+                    <a href="extra project.html">
+                        <button name= "home" size="20" maxlength="40"style="background-color:rgb(88, 175, 246); border: 3px black gradient;border-radius: 30px; "> <b><pre> BACK </pre></b></button>
+                        </a>
+                </div>
+              </div>
+        </body>
+    </div>
+         <script>
+            let TEXT = document.getElementById("TEXT");
+//WORDS AND CHARACTERS COUNT//
+TEXT.addEventListener('input',function(){
+    var text=this.value;
+    let char = text.length;
+    document.getElementById("characterCount").innerHTML = char;
+    text = text.trim();
+    let words= text.split(" ");
+    let cleanList = words.filter(function(elm){
+       return elm != "";
+    });
+    document.getElementById("wordsCount").innerHTML = cleanList.length;    
+});
+// VOWEL COUNT//
+TEXT.addEventListener('input',function getVowels(){
+        var Text =this.value;
+        const vowels = 'aeiouAEIOU';
+        var Count = 0;
+        for(var i=0;i<=Text.length;i++){
+            if(vowels.indexOf(Text[i]) !== -1){
+                Count++;
+            }
+        }
+console.log(Count);
+
+    document.getElementById("vowelCount").innerHTML=Count;
+});
+
+//CONSONANTS COUNT//
+TEXT.addEventListener('input',function(){
+    var Mytext = this.value;
+    const consonant ='bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
+    var count =0;
+    for(var j =0;j<Mytext.length;j++){
+        if(consonant.indexOf(Mytext[j]) !== -1){
+            count++;
+        }
+    }
+    console.log(count);
+    document.getElementById("consonantCount").innerHTML=count;
+    localStorage.setItem("raw",Mytext);
+});
+//SENTENCES COUNT//
+    TEXT.addEventListener('input',function(){
+    const myText = this.value;
+ const stop = /[.!?]/;
+ const sentence = myText.split(stop);
+    
+    document.getElementById("sentenceCount").innerHTML=sentence.length-1;
+    });
+
+//DIGITS COUNT//
+TEXT.addEventListener('input',function getdigits(){
+        var Text2 =this.value;
+        const digits = '0123456789';
+        var digit = 0;
+        for(var k=0;k<=Text2.length;k++){
+            if(digits.indexOf(Text2[k]) !== -1){
+                digit++;
+            }
+        }
+console.log(digit);
+
+    document.getElementById("digitCount").innerHTML=digit;
+});
+
+//paragraph count//
+TEXT.addEventListener('input',function (){
+const TEXT2=this.value;
+const paragraphs =(TEXT2.split(/\r?\n|\r/));
+//paragraphCount.innerHTML = paragraphs.length;
+//console.log(paragraphs);
+document.getElementById("paragraphCount").innerHTML=paragraphs.length-1;
+});
+
+//READING TIME//
+TEXT.addEventListener('input',function (){
+const words1 =this.value;
+if (words1) {
+var seconds = Math.floor(words1.length * 60 / 275);
+// need to convert seconds to minutes and hours
+if (seconds > 59) {
+var minutes = Math.floor(seconds / 60);
+seconds = seconds - minutes * 60;
+//readingTime.innerHTML = minutes + "m " + seconds + "s";
+
+document.getElementById("readingTime").innerHTML=minutes + "m " + seconds + "s";
+}
+else {
+//readingTime.innerHTML = seconds + "s";
+document.getElementById("readingTime").innerHTML=seconds +"s";
+}
+}
+else {
+//readingTime.innerHTML = "0s";
+document.getElementById("readingTime").innerHTML="0s";
+}
+});
+
+
+// window.onbeforeunload=function(){
+//     var message="Kindly leave a feedback :)";
+//     return message;
+// }
+function onMouseOut(event) {
+  // If the mouse is near the top of the window, show the popup
+  if (event.clientY < 50) {
+    // Remove this event listener
+    document.removeEventListener("mouseout", onMouseOut);
+
+    // Show the popup
+    document.getElementById("popup").style.display = "block";
+  }
+}
+
+document.addEventListener("mouseout", onMouseOut);
+
+tinymce.init({
+    selector: "textarea",
+    plugins: [
+      "advlist autolink lists link image charmap print preview anchor",
+      "searchreplace visualblocks code fullscreen",
+      "insertdatetime media table paste tinymcespellchecker"
+    ],
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | spellchecker | bullist numlist outdent indent | link image",
+height: 350
+  });
+</script>
+</html>

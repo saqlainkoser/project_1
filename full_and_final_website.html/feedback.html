@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" /> -->
+    <style>
+        div.parent{
+            display:grid;
+            grid-template-columns: 70% 30%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            /* border: solid black; */
+            font-size: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .one{
+            z-index: 10;
+            font-size:3vw;
+            margin:0%;
+            padding:3%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            background-size: 50%;
+            /* min-width   : 600px; */
+            color:rgb(159, 234, 255);
+            text-align: center;
+            text-transform:uppercase;
+            grid-column: 1/3;
+            position:fixed;
+            top:0%;
+            right:0%;
+            left:0%;
+
+            visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            display: block;
+            /* grid-row: 1/3; */
+        }
+        .two{
+            margin:0%;
+            padding:2%;
+            /* background-color:rgb(150, 60, 27); */
+            color:black;
+            text-align: center;
+            text-transform:uppercase;
+            grid-column: 1/2;
+            grid-row: 3/20;
+        }
+        .content a:hover {
+            background-color:rgb(148, 148, 181);
+        }
+        .three a.active {
+  background-color:rgb(181, 181, 182); 
+}
+.three{
+            font-size: 3vw;
+            width: 20%;
+            margin:0%;
+            padding:2%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            color:black;
+            text-align: center;
+            text-transform: uppercase;
+            grid-column: 2/3;
+            grid-row: 2/10;
+            position:fixed;
+            right:0%;
+            top:0%;
+            bottom:0%;
+            visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            }
+
+
+            @media screen and (max-width: 700px) {
+                .three{
+            font-size: 30px;
+            width: 20%;
+            margin:0%;
+            padding:2%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            color:black;
+            text-align: center;
+            text-transform: uppercase;
+            grid-column: 2/3;
+            grid-row: 2/10;
+            position:fixed;
+            right:0%;
+            top:0%;
+            bottom:0%;
+            visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+            }
+        }
+
+/* Add animation (fade in the popup) */
+          @-webkit-keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity: 1;}
+         }
+
+        @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+        }
+        
+        body{
+          grid:none;    
+            /* background-color:rgb(28, 212, 236); */
+            background-image: url('https://media.istockphoto.com/id/1223914421/vector/abstract-blue-wave-background.jpg?s=612x612&w=0&k=20&c=W8IAWjODYdStfbZXxqdG-ovDG2rWjRehnlrQCw1eDn0=');
+        }
+        .rating {
+  /* display: inline-block; */
+  position: relative;
+  top:40vw;
+  left:29vw;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2vw;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #ffa904;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #ffa904;
+}
+section {
+  position: fixed;
+
+}
+button {
+  font-size: 18px;
+  font-weight: 400;
+  color:black;
+  padding: 10px 15px;
+  border: none;
+  background: #4070f4;
+  border-radius: 6px;
+  cursor: pointer;
+  border: black solid ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover {
+  background-color: #16358a;
+}
+button.show-modal,
+.modal-box {
+  position: fixed;
+  left: 35%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+section.active .show-modal {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+section.active .modal-box {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-box i {
+  font-size: 70px;
+  color: #4070f4;
+}
+.modal-box h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+.modal-box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+.modal-box .buttons {
+  margin-top: 25px;
+}
+.modal-box button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+}
+        
+    </style>
+    <body>
+    <div class="parent">
+    <p class="one" ><u><big><big>WORD COUNTER  </big></big></u></p>
+    <div class='three'>
+        <br><br><hr>
+        <div class='content'>
+        <a  href='extra project.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>HOME</small></small></small></small></a><hr>
+    <a  href='blog.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>BLOG</small></small></small></small></a><hr>
+     <a href='about.html' style="color:black;position:relative; bottom:0px;"><small><small><small><small> ABOUT</small></small></small></small></a><hr>
+        <a  href='f1.htm' style="color:black; position:relative;  text-align: center; "><small><small><small><small>COUNT FREQUENCY</small></small></small></small></a><hr>
+    <!-- <a  href='find word.html'  style="color:black; position:relative; text-align: center; "><small><small><small><small>FIND WORD</small></small></small></small></a><hr> -->
+    <a  href='feedback.html' class='active'style="color:black; position:relative; text-align: center; "><small><small><small><small>FEEDBACK</small></small></small></small></a><hr>
+    <a  href='help.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>HELP</small></small></small></small></a><hr>
+</div>
+</div>
+<div class="two">
+    <br><br>
+<p style="color:black; font-size: 3vw;"><b>Kindly give us your feedback ...&nbsp&nbsp :)</b></p>
+<textarea name="TEXT" cols="50" rows="10" style="background-color:rgb(53, 139, 210); border: 3px black solid; border-radius: 10px;visibility: visible;
+-webkit-animation: fadeIn 1s;animation: fadeIn 1s;"></textarea><br><br><br>
+<a href="thankyou.html">
+<button name= "FIND WORD" size="15" maxlength="35"style="background-color:rgb(88, 175, 246); border: 3px black gradient;border-radius: 30px;"> <b><pre> SUBMIT </pre></b></button>
+</a>
+<br>
+<br>
+</div>
+<form  class="rating" >
+    <label>
+      <input type="radio" name="stars" value="1" />
+      <span class="fa fa-star icon"></span>
+    </label>
+    <label>
+      <input type="radio" name="stars" value="2" />
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+    </label>
+    <label>
+      <input type="radio" name="stars" value="3" />
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>   
+    </label>
+    <label>
+      <input type="radio" name="stars" value="4" />
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+    </label>
+    <label>
+      <input type="radio" name="stars" value="5" />
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+      <span class="fa fa-star icon"></span>
+    </label>
+  </form>
+        </body>
+        <!-- <script>
+            // When the user clicks on <div>, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            </script> -->
+            
+</div>
+</html>

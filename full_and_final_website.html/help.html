@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        div.parent{
+            display:grid;
+            grid-template-columns: 70% 30%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            /* border: solid black; */
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .one{
+            margin:0%;
+            padding:2%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            color:black;
+            text-align: center;
+            text-transform:uppercase;
+            grid-column: 1/3;
+            top:0%;
+            position:fixed;
+            right:0%;
+            left:0%;
+            visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s
+            display: block;
+            /* grid-row: 1/3; */
+        }
+        .two{
+            margin:0%;
+            padding:2%;
+            /* background-color:rgb(150, 60, 27); */
+            color:black;
+            text-align: left;
+            grid-column: 1/2;
+            grid-row: 3/20;
+        }
+        .content a:hover {
+            background-color:rgb(148, 148, 181);
+        }
+        .three a.active {
+  background-color:rgb(181, 181, 182); }
+        .three{
+            margin:0%;
+            padding:2%;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.OizYAY3-2MtbjfHpnBRYXAHaEK&pid=Api&P=0&h=180');
+            color:black;
+            text-align: center;
+            text-transform: uppercase;
+            grid-column: 2/3;
+            grid-row: 2/20;
+            position:fixed;
+            right:0%;
+            top:0%;
+            bottom:0%;
+             visibility: visible;
+           -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s
+        }
+        /* Add animation (fade in the popup) */
+          @-webkit-keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity: 1;}
+         }
+
+        @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+        }
+        body{
+            grid:none;
+            background-image: url('https://media.istockphoto.com/id/1223914421/vector/abstract-blue-wave-background.jpg?s=612x612&w=0&k=20&c=W8IAWjODYdStfbZXxqdG-ovDG2rWjRehnlrQCw1eDn0=');
+            margin:10px;
+            padding:10px;
+            text-align: center;
+        }
+        .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+* {
+  box-sizing: border-box;
+}
+
+#popup {
+  display: none;
+}
+
+.popup__wrapper {
+  background: rgba(0, 0, 0, .75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.popup__container {
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 100px auto;
+  max-width: 100%;
+  padding: 20px;
+  width: 500px;
+}
+
+.popup__title {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+    </style>
+    <body>
+        <div class="parent">
+        <div class="two"><small><small></small>
+            <br>
+            <br>
+        <h4>HOW TO USE WORD COUNTER?</h4>
+        <p>Word counter is used to count words in a text entered by the user. Our platform provides additional feature such as counting vowels,consonants,sentences etc.
+            in oder to use the word counter, just simply enter the text of which you want to count the given features and all the things will be automatically counted. Here's a demo of how to use this word counter.
+        </p>
+
+        <img src="/project final.png" alt="demo" height="300" width="600" style="border: 3px black solid">
+        <br><br><p> <b>Contact Us :<br><br>
+            Swing by for a cup of coffee, or leave us a message :) </b></p>
+        <ul>
+            <li> Shriya Choudhary <br> (shriya2352.be22@chitkara.edu.in) <br><br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/full_and_final_website.html/chaudhary.jpg" alt="Avatar" style="width:300px;height:200px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Shriya Choudhary</p>
+                        <p>Computer Science student</p>
+                        </div></li><br>
+            <li> Shriya Seth <br>(shriya2353.be22@chitkara.edu.in)<br> <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/full_and_final_website.html/seth3.jpg" alt="Avatar" style="width:300px;height:200px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Shriya Seth</p>
+                        <p>Computer Science student</p>
+                        </div></li><br>
+            <li> Shruti <br>(shruti2354.be22@chitkara.edu.in)<br><br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/full_and_final_website.html/bishnoi.jpg" alt="Avatar" style="width:300px;height:200px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Shruti</p>
+                        <p>Computer Science student</p>
+                        </div></li><br>
+            <li> Shruti Bansal<br> (shruti2355.be22@chitkara.edu.in)<br><br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/full_and_final_website.html/bansal2.jpg" alt="Avatar" style="width:300px;height:200px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Shruti Bansal</p>
+                        <p>Computer Science student</p>
+                        </div></li>
+        </ul>
+<br>
+<br> 
+</small>
+</small>
+</div>
+<p class="one" style="font-family:Georgia, 'Times New Roman', Times, serif;"><u><big><big>WORD COUNTER</big></big></u></p>
+            <div class='three'>
+                <br><br><hr>
+                <div class='content'>
+                <a  href='extra project.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>HOME</small></small></small></small></a><hr>
+            <a  href='blog.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>BLOG</small></small></small></small></a><hr>
+             <a href='about.html'    style="color:black;position:relative; bottom:0px;"><small><small><small><small> ABOUT</small></small></small></small></a><hr>
+                <a  href='f1.htm' style="color:black; position:relative;  text-align: center; "><small><small><small><small>COUNT FREQUENCY</small></small></small></small></a><hr>
+            <!-- <a  href='find word.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>FIND WORD</small></small></small></small></a><hr> -->
+            <a  href='feedback.html' style="color:black; position:relative; text-align: center; "><small><small><small><small>FEEDBACK</small></small></small></small></a><hr>
+    <a  href='help.html'class='active' style="color:black; position:relative; text-align: center; "><small><small><small><small>HELP</small></small></small></small></a><hr>
+        
+        </div>
+            </div>
+</div>
+
+    </div>
+  </div>
+  <div id="popup" class="popup__wrapper">
+    <div class="popup__container">
+      <h1 class="popup__title">Thank you for visiting!</h1>
+      <p>Have a wonderful day 💁</p>
+      <p>Kindly fill the feedback form!!</p>
+      <a href="feedback.html">
+        <button name= "feedback" size="20" maxlength="40"style="background-color:rgb(88, 175, 246); border: 3px black gradient;border-radius: 30px;"> <b><pre> FEEDBACK </pre></b></button>
+        </a>
+        <!-- <br><br> -->
+        <a href="help.html">
+            <button name= "home" size="20" maxlength="40"style="background-color:rgb(88, 175, 246); border: 3px black gradient;border-radius: 30px; right:10px;"> <b><pre> BACK </pre></b></button>
+            </a>
+    </div>
+  </div>
+    </body>
+    <script>
+      function onMouseOut(event) {
+  // If the mouse is near the top of the window, show the popup
+  if (event.clientY < 50) {
+    // Remove this event listener
+    document.removeEventListener("mouseout", onMouseOut);
+
+    // Show the popup
+    document.getElementById("popup").style.display = "block";
+  }
+}
+
+document.addEventListener("mouseout", onMouseOut);
+    </script>
+</html>
